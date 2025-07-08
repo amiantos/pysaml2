@@ -42,7 +42,6 @@ defusedxml = "*"
 importlib-metadata = {version = ">=1.7.0", python = "<3.8"}
 importlib-resources = {python = "<3.9", version = "*"}
 paste = {optional = true, version = "*"}
-pyopenssl = "<24.3.0"
 python-dateutil = "*"
 pytz = "*"
 "repoze.who" = {optional = true, version = "*"}
@@ -66,7 +65,6 @@ flake8-bugbear = "^22.8.23"
 flake8-logging-format = "^0.7.5"
 ipdb = "^0.13.9"
 mypy = "^1.0.0"
-types-pyopenssl = "^23.0.0.3"
 types-python-dateutil = "^2.8.19.6"
 types-pytz = "^2022.7.1.0"
 types-setuptools = "^67.2.0.1"

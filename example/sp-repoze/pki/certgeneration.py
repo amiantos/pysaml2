@@ -45,9 +45,9 @@ cert = x509.CertificateBuilder().subject_name(
 ).serial_number(
     x509.random_serial_number()
 ).not_valid_before(
-    datetime.datetime.utcnow()
+    datetime.datetime.now(datetime.timezone.utc)
 ).not_valid_after(
-    datetime.datetime.utcnow() + datetime.timedelta(days=3650)
+    datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=3650)
 ).add_extension(
     x509.SubjectAlternativeName([
         x509.DNSName(cert_info_ca["cn"]),
